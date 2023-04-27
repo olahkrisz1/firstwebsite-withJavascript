@@ -131,27 +131,28 @@
         </section>
 
         <section>
-            <div class="containerRecipe">
-                <h1>Make your own recipe!</h1>
-                <form>
-                    <input style="width: 300px" type="text" id="new-recipe" placeholder="Make it step by step" />
-                </form>
-                <ul id="recipeList">
-                    <li class="step">
-                        <label><input type="checkbox">Grill the meat</label>
-                    </li>
-                    <li class="recipe completed">
-                        <label><input type="checkbox" checked>Melt cheese on top</label>
-                    </li>
+            <div class="container bg-warning">
+                <h1 class="text-center">Create your own recipe!</h1>
 
+                <form>
+                    <input class="w-50" type="text" id="new-step" placeholder="Build your recipe step by step" />
+                </form>
+
+                <ul id="steplist">
+                    <li class="step">
+                        <label><input type="checkbox" /> buy all ingredients</label>
+                    </li>
+                    <li class="step completed">
+                        <label><input type="checkbox" checked /> get everything ready on the table</label>
+                    </li>
                 </ul>
                 <div class="footer">
-                    Steps: <span id="step-count">1</span> • Done:
-                    <span id="completed-step">0</span> • Total:
+                    To complete: <span id="step-count">1</span> • Done:
+                    <span id="completed-count">0</span> • Total:
                     <span id="total-count">1</span>
-                    <a href="#" id="clean-up">Clean up</a>
 
-
+                    <!-- link to clean up steps that are done -->
+                    <a href="#/" id="clean-up">Clean up</a>
                 </div>
             </div>
         </section>
